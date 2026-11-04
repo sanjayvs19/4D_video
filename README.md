@@ -7,6 +7,7 @@ Windows-oriented pipeline and deliverables for 4D Gaussian-splatting video recon
 - `4d-gaussian-splatting-src/4d-gaussian-splatting/` — patched upstream source (Windows/CUDA build fixes, `build_ext.bat`, `env_4dgs.bat`, `run.bat`, configs).
 - `4dv_ours/`, `sftest/` — COLMAP-format sparse reconstructions and assets.
 - `deliverables/` — rendered videos, `.4dv` captures and the 4D viewer.
+- `videos/input/` — source camera videos; `videos/output/` — rendered demo videos.
 - `*.bat`, `*.ps1`, `*.py` — preprocessing, training, rendering and sanitizer scripts.
 - `*.4dv` — 4D video captures (HackNeX and ours).
 
