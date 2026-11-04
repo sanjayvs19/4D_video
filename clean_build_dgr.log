@@ -1,0 +1,2203 @@
+'vswhere.exe' is not recognized as an internal or external command,
+operable program or batch file.
+===== which cl / version =====
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\cl.exe
+Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35229 for x64
+===== clearing JIT cache =====
+===== compiling rasterizer via JIT =====
+Using C:\Users\SANJAY V S\AppData\Local\torch_extensions\torch_extensions\Cache\py37_cu116 as PyTorch extensions root...
+Creating extension directory C:\Users\SANJAY V S\AppData\Local\torch_extensions\torch_extensions\Cache\py37_cu116\diff_gaussian_rasterization...
+Detected CUDA files, patching ldflags
+Emitting ninja build file C:\Users\SANJAY V S\AppData\Local\torch_extensions\torch_extensions\Cache\py37_cu116\diff_gaussian_rasterization\build.ninja...
+Building extension module diff_gaussian_rasterization...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/6] C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc --generate-dependencies-with-compile --dependency-output backward.cuda.o.d -Xcudafe --diag_suppress=dll_interface_conflict_dllexport_assumed -Xcudafe --diag_suppress=dll_interface_conflict_none_assumed -Xcudafe --diag_suppress=field_without_dll_interface -Xcudafe --diag_suppress=base_class_has_different_dll_interface -Xcompiler /EHsc -Xcompiler /wd4190 -Xcompiler /wd4018 -Xcompiler /wd4275 -Xcompiler /wd4267 -Xcompiler /wd4244 -Xcompiler /wd4251 -Xcompiler /wd4819 -Xcompiler /MD -DTORCH_EXTENSION_NAME=diff_gaussian_rasterization -DTORCH_API_INCLUDE_EXTENSION_H "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\TH" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\THC" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\Include" -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ID:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\third_party/glm/ -allow-unsupported-compiler -D__NV_NO_HOST_COMPILER_CHECK=1 -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH -c D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\cuda_rasterizer\backward.cu -o backward.cuda.o 
+D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\cuda_rasterizer\auxiliary.h(150): warning #177-D: variable "p_proj" was declared but never referenced
+
+backward.cu
+[2/6] C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc --generate-dependencies-with-compile --dependency-output forward.cuda.o.d -Xcudafe --diag_suppress=dll_interface_conflict_dllexport_assumed -Xcudafe --diag_suppress=dll_interface_conflict_none_assumed -Xcudafe --diag_suppress=field_without_dll_interface -Xcudafe --diag_suppress=base_class_has_different_dll_interface -Xcompiler /EHsc -Xcompiler /wd4190 -Xcompiler /wd4018 -Xcompiler /wd4275 -Xcompiler /wd4267 -Xcompiler /wd4244 -Xcompiler /wd4251 -Xcompiler /wd4819 -Xcompiler /MD -DTORCH_EXTENSION_NAME=diff_gaussian_rasterization -DTORCH_API_INCLUDE_EXTENSION_H "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\TH" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\THC" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\Include" -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ID:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\third_party/glm/ -allow-unsupported-compiler -D__NV_NO_HOST_COMPILER_CHECK=1 -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH -c D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\cuda_rasterizer\forward.cu -o forward.cuda.o 
+D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\cuda_rasterizer\auxiliary.h(150): warning #177-D: variable "p_proj" was declared but never referenced
+
+forward.cu
+[3/6] C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc --generate-dependencies-with-compile --dependency-output rasterizer_impl.cuda.o.d -Xcudafe --diag_suppress=dll_interface_conflict_dllexport_assumed -Xcudafe --diag_suppress=dll_interface_conflict_none_assumed -Xcudafe --diag_suppress=field_without_dll_interface -Xcudafe --diag_suppress=base_class_has_different_dll_interface -Xcompiler /EHsc -Xcompiler /wd4190 -Xcompiler /wd4018 -Xcompiler /wd4275 -Xcompiler /wd4267 -Xcompiler /wd4244 -Xcompiler /wd4251 -Xcompiler /wd4819 -Xcompiler /MD -DTORCH_EXTENSION_NAME=diff_gaussian_rasterization -DTORCH_API_INCLUDE_EXTENSION_H "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\TH" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\THC" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\Include" -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ID:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\third_party/glm/ -allow-unsupported-compiler -D__NV_NO_HOST_COMPILER_CHECK=1 -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH -c D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\cuda_rasterizer\rasterizer_impl.cu -o rasterizer_impl.cuda.o 
+D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\cuda_rasterizer\auxiliary.h(150): warning #177-D: variable "p_proj" was declared but never referenced
+
+rasterizer_impl.cu
+[4/6] cl /showIncludes -DTORCH_EXTENSION_NAME=diff_gaussian_rasterization -DTORCH_API_INCLUDE_EXTENSION_H "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\TH" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\THC" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\Include" -D_GLIBCXX_USE_CXX11_ABI=0 /MD /wd4819 /wd4251 /wd4244 /wd4267 /wd4275 /wd4018 /wd4190 /EHsc -D__NV_NO_HOST_COMPILER_CHECK=1 -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH -c D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\ext.cpp /Foext.o 
+Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35229 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/macros/Macros.h(143): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/core/TensorImpl.h(2214): warning C4805: '|': unsafe mix of type 'uintptr_t' and type 'bool' in operation
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/core/DeviceGuard.h(178): note: see reference to class template instantiation 'c10::impl::InlineOptionalDeviceGuard<c10::impl::VirtualGuardImpl>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/core/impl/InlineDeviceGuard.h(427): note: see reference to class template instantiation 'c10::optional<c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::TensorBase
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/TensorBase.h(951): note: see reference to class template instantiation 'c10::optional<at::TensorBase>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::TensorBase
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::TensorBase
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::TensorBase
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::TensorBase
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/TensorBody.h(509): note: see reference to class template instantiation 'c10::optional<at::Tensor>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Generator
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/TensorBody.h(584): note: see reference to class template instantiation 'c10::optional<at::Generator>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Generator
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::DimVector
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/TensorIterator.h(766): note: see reference to class template instantiation 'c10::optional<c10::DimVector>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::DimVector
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::DimVector
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::DimVector
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::DimVector
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::string
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type_base.h(448): note: see reference to class template instantiation 'c10::optional<std::string>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::string
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::string
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::string
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::string
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type_base.h(696): note: see reference to class template instantiation 'c10::optional<c10::QualifiedName>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/ivalue.h(1338): note: see reference to class template instantiation 'c10::optional<std::shared_ptr<torch::jit::CompilationUnit>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/ivalue.h(1339): note: see reference to class template instantiation 'c10::optional<std::weak_ptr<torch::jit::CompilationUnit>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type.h(482): note: see reference to class template instantiation 'c10::optional<std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type.h(441): note: see reference to class template instantiation 'c10::optional<std::vector<T,std::allocator<T>>>' being compiled
+        with
+        [
+            T=c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type.h(843): note: see reference to class template instantiation 'c10::VaryingShape<c10::Stride>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type.h(567): note: see reference to class template instantiation 'c10::optional<std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type.h(613): note: see reference to class template instantiation 'c10::VaryingShape<int64_t>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type.h(567): note: see reference to class template instantiation 'c10::optional<std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/jit_type.h(726): note: see reference to class template instantiation 'c10::optional<std::vector<int64_t,std::allocator<int64_t>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/core/StreamGuard.h(139): note: see reference to class template instantiation 'c10::impl::InlineOptionalStreamGuard<c10::impl::VirtualGuardImpl>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/core/impl/InlineStreamGuard.h(197): note: see reference to class template instantiation 'c10::optional<c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/core/StreamGuard.h(162): note: see reference to class template instantiation 'c10::impl::InlineMultiStreamGuard<c10::impl::VirtualGuardImpl>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/core/impl/InlineStreamGuard.h(232): note: see reference to class template instantiation 'c10::optional<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ivalue::Future::WeakStorage,std::allocator<c10::ivalue::Future::WeakStorage>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/ivalue_inl.h(834): note: see reference to class template instantiation 'c10::optional<std::vector<c10::ivalue::Future::WeakStorage,std::allocator<c10::ivalue::Future::WeakStorage>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ivalue::Future::WeakStorage,std::allocator<c10::ivalue::Future::WeakStorage>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ivalue::Future::WeakStorage,std::allocator<c10::ivalue::Future::WeakStorage>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ivalue::Future::WeakStorage,std::allocator<c10::ivalue::Future::WeakStorage>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ivalue::Future::WeakStorage,std::allocator<c10::ivalue::Future::WeakStorage>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/autograd/variable.h(525): note: see reference to class template instantiation 'c10::optional<torch::autograd::ViewInfo>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/function_schema.h(179): note: see reference to class template instantiation 'c10::optional<c10::IValue>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/function_schema.h(26): note: see reference to class template instantiation 'c10::optional<c10::AliasInfo>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/op_registration/op_registration.h(434): note: see reference to class template instantiation 'c10::optional<c10::either<c10::OperatorName,c10::FunctionSchema>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/dispatch/OperatorEntry.h(212): note: see reference to class template instantiation 'c10::optional<c10::impl::AnnotatedSchema>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\ATen/core/dispatch/OperatorEntry.h(271): note: see reference to class template instantiation 'c10::optional<c10::impl::OperatorEntry::CppSignatureWithDebug>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/frontend/source_range.h(357): note: see reference to class template instantiation 'c10::optional<std::tuple<std::string,size_t,size_t>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/frontend/source_range.h(380): note: see reference to class template instantiation 'c10::optional<torch::jit::SourceRange>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/ir/scope.h(127): note: see reference to class template instantiation 'c10::optional<torch::jit::InlinedCallStackPtr>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/ir/scope.h(140): note: see reference to class template instantiation 'c10::optional<torch::jit::ModuleInstanceInfo>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/ir/constants.h(29): note: see reference to class template instantiation 'c10::optional<torch::jit::ScopePtr>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/runtime/interpreter.h(150): note: see reference to class template instantiation 'c10::optional<at::ThreadLocalState>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/api/function_impl.h(165): note: see reference to class template instantiation 'std::array<c10::optional<std::shared_ptr<torch::jit::Graph>>,4>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.44.35207\include\array(570): note: see reference to class template instantiation 'c10::optional<std::shared_ptr<torch::jit::Graph>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/api/function_impl.h(179): note: see reference to class template instantiation 'std::array<c10::optional<torch::jit::GraphExecutor>,4>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.44.35207\include\array(570): note: see reference to class template instantiation 'c10::optional<torch::jit::GraphExecutor>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/api/object.h(46): note: see reference to class template instantiation 'c10::optional<torch::jit::Method>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/jit/api/module.h(304): note: see reference to class template instantiation 'c10::optional<std::vector<std::string,std::allocator<std::string>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/autograd/profiler_legacy.h(400): note: see reference to class template instantiation 'c10::optional<std::function<void (const torch::autograd::profiler::thread_event_lists &)>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::vector<int64_t,std::allocator<int64_t>>,std::allocator<std::vector<int64_t,std::allocator<int64_t>>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch/csrc/autograd/profiler_kineto.h(247): note: see reference to class template instantiation 'c10::optional<std::vector<std::vector<int64_t,std::allocator<int64_t>>,std::allocator<std::vector<int64_t,std::allocator<int64_t>>>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<int64_t,std::allocator<int64_t>>,std::allocator<std::vector<int64_t,std::allocator<int64_t>>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<int64_t,std::allocator<int64_t>>,std::allocator<std::vector<int64_t,std::allocator<int64_t>>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<int64_t,std::allocator<int64_t>>,std::allocator<std::vector<int64_t,std::allocator<int64_t>>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::vector<int64_t,std::allocator<int64_t>>,std::allocator<std::vector<int64_t,std::allocator<int64_t>>>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include\torch/nn/options/loss.h(404): note: see reference to class template instantiation 'c10::optional<torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include\torch/nn/options/upsampling.h(26): note: see reference to class template instantiation 'c10::optional<std::vector<T,std::allocator<T>>>' being compiled
+        with
+        [
+            T=double
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include\torch/nn/modules/rnn.h(155): note: see reference to class template instantiation 'c10::optional<std::tuple<at::Tensor,at::Tensor>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include\torch/optim/lbfgs.h(46): note: see reference to class template instantiation 'c10::optional<std::vector<at::Tensor,std::allocator<at::Tensor>>>' being compiled
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(528): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\pybind11\detail/common.h(108): warning C4005: 'HAVE_SNPRINTF': macro redefinition
+C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\Include\pyerrors.h(490): note: see previous definition of 'HAVE_SNPRINTF'
+[5/6] C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc --generate-dependencies-with-compile --dependency-output rasterize_points.cuda.o.d -Xcudafe --diag_suppress=dll_interface_conflict_dllexport_assumed -Xcudafe --diag_suppress=dll_interface_conflict_none_assumed -Xcudafe --diag_suppress=field_without_dll_interface -Xcudafe --diag_suppress=base_class_has_different_dll_interface -Xcompiler /EHsc -Xcompiler /wd4190 -Xcompiler /wd4018 -Xcompiler /wd4275 -Xcompiler /wd4267 -Xcompiler /wd4244 -Xcompiler /wd4251 -Xcompiler /wd4819 -Xcompiler /MD -DTORCH_EXTENSION_NAME=diff_gaussian_rasterization -DTORCH_API_INCLUDE_EXTENSION_H "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\torch\csrc\api\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\TH" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\include\THC" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" "-IC:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\Include" -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ID:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\third_party/glm/ -allow-unsupported-compiler -D__NV_NO_HOST_COMPILER_CHECK=1 -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH -c D:\4D\4d-gaussian-splatting\diff-gaussian-rasterization\rasterize_points.cu -o rasterize_points.cuda.o 
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/macros/Macros.h(143): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/macros/Macros.h(143): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/SymInt.h(84): warning #68-D: integer conversion resulted in a change of sign
+
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/SymInt.h(84): warning #68-D: integer conversion resulted in a change of sign
+
+rasterize_points.cu
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/TensorImpl.h(2213): warning C4805: '|': unsafe mix of type 'uintptr_t' and type 'bool' in operation
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/DeviceGuard.h(178): note: see reference to class template instantiation 'c10::impl::InlineOptionalDeviceGuard<c10::impl::VirtualGuardImpl>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/impl/InlineDeviceGuard.h(427): note: see reference to class template instantiation 'c10::optional<c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::TensorBase
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/TensorBase.h(951): note: see reference to class template instantiation 'c10::optional<at::TensorBase>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::TensorBase
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::TensorBase
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::TensorBase
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::TensorBase
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Tensor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/TensorBody.h(509): note: see reference to class template instantiation 'c10::optional<at::Tensor>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Tensor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Generator
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/TensorBody.h(584): note: see reference to class template instantiation 'c10::optional<at::Generator>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Generator
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::SmallVector<__int64,5>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/TensorIterator.h(766): note: see reference to class template instantiation 'c10::optional<c10::SmallVector<__int64,5>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::SmallVector<__int64,5>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::SmallVector<__int64,5>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::SmallVector<__int64,5>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::SmallVector<__int64,5>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type_base.h(448): note: see reference to class template instantiation 'c10::optional<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type_base.h(696): note: see reference to class template instantiation 'c10::optional<c10::QualifiedName>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/ivalue.h(1338): note: see reference to class template instantiation 'c10::optional<std::shared_ptr<torch::jit::CompilationUnit>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/ivalue.h(1339): note: see reference to class template instantiation 'c10::optional<std::weak_ptr<torch::jit::CompilationUnit>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::weak_ptr<torch::jit::CompilationUnit>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type.h(482): note: see reference to class template instantiation 'c10::optional<std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type.h(441): note: see reference to class template instantiation 'c10::optional<std::vector<T,std::allocator<T>>>' being compiled
+        with
+        [
+            T=c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type,std::allocator<c10::impl::ScalarTypeToCPPType<c10::ScalarType::Bool>::type>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type.h(843): note: see reference to class template instantiation 'c10::VaryingShape<c10::Stride>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type.h(567): note: see reference to class template instantiation 'c10::optional<std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<__int64>,std::allocator<c10::optional<__int64>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type.h(613): note: see reference to class template instantiation 'c10::VaryingShape<__int64>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type.h(567): note: see reference to class template instantiation 'c10::optional<std::vector<c10::optional<__int64>,std::allocator<c10::optional<__int64>>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<__int64>,std::allocator<c10::optional<__int64>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<__int64>,std::allocator<c10::optional<__int64>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<__int64>,std::allocator<c10::optional<__int64>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<__int64>,std::allocator<c10::optional<__int64>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<__int64,std::allocator<__int64>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/jit_type.h(726): note: see reference to class template instantiation 'c10::optional<std::vector<__int64,std::allocator<__int64>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<__int64,std::allocator<__int64>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<__int64,std::allocator<__int64>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<__int64,std::allocator<__int64>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<__int64,std::allocator<__int64>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/StreamGuard.h(139): note: see reference to class template instantiation 'c10::impl::InlineOptionalStreamGuard<c10::impl::VirtualGuardImpl>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/impl/InlineStreamGuard.h(197): note: see reference to class template instantiation 'c10::optional<c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineStreamGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/StreamGuard.h(162): note: see reference to class template instantiation 'c10::impl::InlineMultiStreamGuard<c10::impl::VirtualGuardImpl>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/core/impl/InlineStreamGuard.h(232): note: see reference to class template instantiation 'c10::optional<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::VirtualGuardImpl
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>,std::allocator<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/ivalue_inl.h(834): note: see reference to class template instantiation 'c10::optional<std::vector<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<TTarget>>,std::allocator<c10::weak_intrusive_ptr<TTarget,c10::detail::intrusive_target_default_null_type<TTarget>>>>>' being compiled
+        with
+        [
+            TTarget=c10::StorageImpl
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>,std::allocator<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>,std::allocator<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>,std::allocator<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>,std::allocator<c10::weak_intrusive_ptr<c10::StorageImpl,c10::detail::intrusive_target_default_null_type<c10::StorageImpl>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/autograd/variable.h(525): note: see reference to class template instantiation 'c10::optional<torch::autograd::ViewInfo>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::IValue
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/function_schema.h(179): note: see reference to class template instantiation 'c10::optional<c10::IValue>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::IValue
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/function_schema.h(26): note: see reference to class template instantiation 'c10::optional<c10::AliasInfo>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/op_registration/op_registration.h(434): note: see reference to class template instantiation 'c10::optional<c10::either<c10::OperatorName,c10::FunctionSchema>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/dispatch/OperatorEntry.h(212): note: see reference to class template instantiation 'c10::optional<c10::impl::AnnotatedSchema>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\ATen/core/dispatch/OperatorEntry.h(271): note: see reference to class template instantiation 'c10::optional<c10::impl::OperatorEntry::CppSignatureWithDebug>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,unsigned __int64,unsigned __int64>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/frontend/source_range.h(357): note: see reference to class template instantiation 'c10::optional<std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,unsigned __int64,unsigned __int64>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,unsigned __int64,unsigned __int64>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,unsigned __int64,unsigned __int64>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,unsigned __int64,unsigned __int64>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,unsigned __int64,unsigned __int64>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/frontend/source_range.h(380): note: see reference to class template instantiation 'c10::optional<torch::jit::SourceRange>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::InlinedCallStack,c10::detail::intrusive_target_default_null_type<torch::jit::InlinedCallStack>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/ir/scope.h(127): note: see reference to class template instantiation 'c10::optional<c10::intrusive_ptr<torch::jit::InlinedCallStack,c10::detail::intrusive_target_default_null_type<TTarget>>>' being compiled
+        with
+        [
+            TTarget=torch::jit::InlinedCallStack
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::InlinedCallStack,c10::detail::intrusive_target_default_null_type<torch::jit::InlinedCallStack>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::InlinedCallStack,c10::detail::intrusive_target_default_null_type<torch::jit::InlinedCallStack>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::InlinedCallStack,c10::detail::intrusive_target_default_null_type<torch::jit::InlinedCallStack>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::InlinedCallStack,c10::detail::intrusive_target_default_null_type<torch::jit::InlinedCallStack>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/ir/scope.h(140): note: see reference to class template instantiation 'c10::optional<torch::jit::ModuleInstanceInfo>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::Scope,c10::detail::intrusive_target_default_null_type<torch::jit::Scope>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/ir/constants.h(25): note: see reference to class template instantiation 'c10::optional<c10::intrusive_ptr<torch::jit::Scope,c10::detail::intrusive_target_default_null_type<TTarget>>>' being compiled
+        with
+        [
+            TTarget=torch::jit::Scope
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::Scope,c10::detail::intrusive_target_default_null_type<torch::jit::Scope>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::Scope,c10::detail::intrusive_target_default_null_type<torch::jit::Scope>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::Scope,c10::detail::intrusive_target_default_null_type<torch::jit::Scope>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::intrusive_ptr<torch::jit::Scope,c10::detail::intrusive_target_default_null_type<torch::jit::Scope>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/runtime/interpreter.h(150): note: see reference to class template instantiation 'c10::optional<at::ThreadLocalState>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/api/function_impl.h(165): note: see reference to class template instantiation 'std::array<c10::optional<std::shared_ptr<torch::jit::Graph>>,4>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.44.35207\include\array(570): note: see reference to class template instantiation 'c10::optional<std::shared_ptr<torch::jit::Graph>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/api/function_impl.h(179): note: see reference to class template instantiation 'std::array<c10::optional<torch::jit::GraphExecutor>,4>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.44.35207\include\array(570): note: see reference to class template instantiation 'c10::optional<torch::jit::GraphExecutor>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::GraphExecutor
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/api/object.h(46): note: see reference to class template instantiation 'c10::optional<torch::jit::Method>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/jit/api/module.h(302): note: see reference to class template instantiation 'c10::optional<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<void (const std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>> &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/autograd/profiler_legacy.h(400): note: see reference to class template instantiation 'c10::optional<std::function<void (const std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>> &)>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::function<void (const std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>> &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::function<void (const std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>> &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::function<void (const std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>> &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<void (const std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>> &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::vector<__int64,std::allocator<__int64>>,std::allocator<std::vector<__int64,std::allocator<__int64>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\torch/csrc/autograd/profiler_kineto.h(247): note: see reference to class template instantiation 'c10::optional<std::vector<std::vector<__int64,std::allocator<__int64>>,std::allocator<std::vector<__int64,std::allocator<__int64>>>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<__int64,std::allocator<__int64>>,std::allocator<std::vector<__int64,std::allocator<__int64>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<__int64,std::allocator<__int64>>,std::allocator<std::vector<__int64,std::allocator<__int64>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<__int64,std::allocator<__int64>>,std::allocator<std::vector<__int64,std::allocator<__int64>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::vector<__int64,std::allocator<__int64>>,std::allocator<std::vector<__int64,std::allocator<__int64>>>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<at::Tensor (const at::Tensor &,const at::Tensor &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include/torch/csrc/api/include\torch/nn/options/loss.h(404): note: see reference to class template instantiation 'c10::optional<std::function<at::Tensor (const at::Tensor &,const at::Tensor &)>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::function<at::Tensor (const at::Tensor &,const at::Tensor &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::function<at::Tensor (const at::Tensor &,const at::Tensor &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::function<at::Tensor (const at::Tensor &,const at::Tensor &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<at::Tensor (const at::Tensor &,const at::Tensor &)>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include/torch/csrc/api/include\torch/nn/options/upsampling.h(26): note: see reference to class template instantiation 'c10::optional<std::vector<T,std::allocator<T>>>' being compiled
+        with
+        [
+            T=double
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include/torch/csrc/api/include\torch/nn/modules/rnn.h(154): note: see reference to class template instantiation 'c10::optional<std::tuple<at::Tensor,at::Tensor>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(187): note: the template instantiation context (the oldest one first) is
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include/torch/csrc/api/include\torch/optim/lbfgs.h(46): note: see reference to class template instantiation 'c10::optional<std::vector<at::Tensor,std::allocator<at::Tensor>>>' being compiled
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(540): note: see reference to alias template instantiation 'c10::OptionalBase<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(516): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(397): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:/Users/SANJAY V S/miniconda3/envs/4d_gaussian_splatting/lib/site-packages/torch/include\c10/util/Optional.h(395): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+[6/6] "C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64/link.exe" rasterizer_impl.cuda.o forward.cuda.o backward.cuda.o rasterize_points.cuda.o ext.o /nologo /DLL c10.lib c10_cuda.lib torch_cpu.lib torch_cuda_cu.lib -INCLUDE:?_torch_cuda_cu_linker_symbol_op_cuda@native@at@@YA?AVTensor@2@AEBV32@@Z torch_cuda_cpp.lib -INCLUDE:?warp_size@cuda@at@@YAHXZ torch.lib "/LIBPATH:C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\torch\lib" torch_python.lib "/LIBPATH:C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\libs" "/LIBPATH:C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib/x64" cudart.lib /out:diff_gaussian_rasterization.pyd
+   Creating library diff_gaussian_rasterization.lib and object diff_gaussian_rasterization.exp
+Loading extension module diff_gaussian_rasterization...
+DGR OK True
+===== DGR BUILD EXIT: 0 =====

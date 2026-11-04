@@ -1,0 +1,7 @@
+'vswhere.exe' is not recognized as an internal or external command,
+operable program or batch file.
+[4dv] loaded iter 2000, 272397 gaussians
+[4dv] kept 231946/272397 gaussians (opacity >= 0.03)
+[4dv] wrote hacknex.4dv: 7.42 MB  (231946 gaussians x 32 B + 1655 B header)
+[4dv] bbox [-10.29  -9.04  -7.95] .. [ 8.69 10.55  8.13]  time [0.0,2.0]  cams 4
+===== PY EXIT: 0 =====

@@ -1,0 +1,24 @@
+'vswhere.exe' is not recognized as an internal or external command,
+operable program or batch file.
+===== CL VERSION =====
+Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35229 for x64
+===== NVCC VERSION =====
+Cuda compilation tools, release 11.6, V11.6.55
+===== BUILDING simple-knn =====
+Processing c:\users\sanjay v s\documents\4d\4d-gaussian-splatting\simple-knn
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: simple_knn
+  Building wheel for simple_knn (setup.py): started
+  Building wheel for simple_knn (setup.py): finished with status 'done'
+  Created wheel for simple_knn: filename=simple_knn-0.0.0-cp37-cp37m-win_amd64.whl size=349973 sha256=d42bc2698f7a2839b4d1dd5d6960f8b3160c3059e2263242e85391a9aaf1eb0c
+  Stored in directory: c:\users\sanjay v s\appdata\local\pip\cache\wheels\e6\74\f8\ffb3e613939935744e177a789027429ab8575591ec0327d07a
+Successfully built simple_knn
+Installing collected packages: simple_knn
+Successfully installed simple_knn-0.0.0
+===== BUILD EXIT CODE: 0 =====
+===== IMPORT TEST =====
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: DLL load failed: The specified module could not be found.
+===== IMPORT EXIT CODE: 1 =====

@@ -1,0 +1,50 @@
+'vswhere.exe' is not recognized as an internal or external command,
+operable program or batch file.
+===== BUILDING pointops2 =====
+Processing c:\users\sanjay v s\documents\4d\4d-gaussian-splatting\pointops2
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: torch in c:\users\sanjay v s\miniconda3\envs\4d_gaussian_splatting\lib\site-packages (from pointops2==1.0) (1.12.1)
+Requirement already satisfied: numpy in c:\users\sanjay v s\miniconda3\envs\4d_gaussian_splatting\lib\site-packages (from pointops2==1.0) (1.21.6)
+Requirement already satisfied: typing_extensions in c:\users\sanjay v s\miniconda3\envs\4d_gaussian_splatting\lib\site-packages (from torch->pointops2==1.0) (4.7.1)
+Building wheels for collected packages: pointops2
+  Building wheel for pointops2 (setup.py): started
+  Building wheel for pointops2 (setup.py): finished with status 'done'
+  Created wheel for pointops2: filename=pointops2-1.0-cp37-cp37m-win_amd64.whl size=221290 sha256=0855eb95a5b7c4e416554dae54a26ba4b0c1ea3f3ac32829c7868ffec24f8e3e
+  Stored in directory: C:\Users\SANJAY~1\AppData\Local\Temp\pip-ephem-wheel-cache-i50adqla\wheels\ad\0c\00\ceb77221d6d9e82faf9f2d1000094ff55f73e55964b2bd702a
+Successfully built pointops2
+Installing collected packages: pointops2
+Successfully installed pointops2-1.0
+===== pointops2 PIP EXIT: 0 =====
+===== BUILDING diff-gaussian-rasterization =====
+Processing c:\users\sanjay v s\documents\4d\4d-gaussian-splatting\diff-gaussian-rasterization
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [7 lines of output]
+      running egg_info
+      creating C:\Users\SANJAY~1\AppData\Local\Temp\pip-pip-egg-info-b48ulfy4\diff_gaussian_rasterization.egg-info
+      writing C:\Users\SANJAY~1\AppData\Local\Temp\pip-pip-egg-info-b48ulfy4\diff_gaussian_rasterization.egg-info\PKG-INFO
+      writing dependency_links to C:\Users\SANJAY~1\AppData\Local\Temp\pip-pip-egg-info-b48ulfy4\diff_gaussian_rasterization.egg-info\dependency_links.txt
+      writing top-level names to C:\Users\SANJAY~1\AppData\Local\Temp\pip-pip-egg-info-b48ulfy4\diff_gaussian_rasterization.egg-info\top_level.txt
+      writing manifest file 'C:\Users\SANJAY~1\AppData\Local\Temp\pip-pip-egg-info-b48ulfy4\diff_gaussian_rasterization.egg-info\SOURCES.txt'
+      error: package directory 'diff_gaussian_rasterization' does not exist
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+===== diffgr PIP EXIT: 1 =====
+===== IMPORT TEST (all three) =====
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'diff_gaussian_rasterization'
+===== IMPORT EXIT: 1 =====

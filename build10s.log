@@ -1,0 +1,11 @@
+'vswhere.exe' is not recognized as an internal or external command,
+operable program or batch file.
+[build] vid01: fl=(1934.5,1698.7) cx,cy=(540.0,960.0)
+[build] vid03: fl=(1368.6,1595.7) cx,cy=(540.0,960.0)
+[build] 147 frames/camera @ 15.0fps over 9.8s  (1080x1920)
+[build] extracting vid01
+[build] extracting vid03
+[build] wrote transforms: 294 train frames (2 cams x 147)
+[build] copied points3d.ply
+[build] DONE -> D:\4D\4d-gaussian-splatting\data\ours\hacknex_10s
+===== PY EXIT: 0 =====

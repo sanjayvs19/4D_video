@@ -1,0 +1,9 @@
+'vswhere.exe' is not recognized as an internal or external command,
+operable program or batch file.
+[n3v10s] reused 4 static poses; intrinsics {'w': 2704.0, 'h': 2028.0, 'fl_x': 1462.7383255729974, 'fl_y': 1462.7383255729974, 'cx': 1352.0, 'cy': 1014.0}
+[n3v10s] extracting cam01
+[n3v10s] extracting cam10
+[n3v10s] extracting cam13
+[n3v10s] extracting cam20
+[n3v10s] 592 train frames (4 cams x 148) over 9.9s @ 15.0fps -> D:\4D\4d-gaussian-splatting\data\N3V\hacknex_10s
+===== PY EXIT: 0 =====

@@ -1,0 +1,155 @@
+ffmpeg version 4.2.2 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 9.2.1 (GCC) 20200122
+  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libdav1d --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libaom --enable-libmfx --enable-amf --enable-ffnvcodec --enable-cuvid --enable-d3d11va --enable-nvenc --enable-nvdec --enable-dxva2 --enable-avisynth --enable-libopenmpt
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'data/N3V/hacknex\cam01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf56.40.101
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 52331 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 2704x2028 [SAR 1:1 DAR 4:3], 52327 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> png (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to 'data/N3V/hacknex/images/cam01_%04d.png':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.29.100
+    Stream #0:0(und): Video: png, rgb24, 2704x2028 [SAR 1:1 DAR 4:3], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc58.54.100 png
+frame=   18 fps=0.0 q=-0.0 size=N/A time=00:00:00.06 bitrate=N/A speed=0.0907x    frame=   34 fps= 23 q=-0.0 size=N/A time=00:00:00.60 bitrate=N/A speed=0.413x    frame=   50 fps= 23 q=-0.0 size=N/A time=00:00:01.13 bitrate=N/A speed=0.514x    frame=   60 fps= 19 q=-0.0 Lsize=N/A time=00:00:02.00 bitrate=N/A speed=0.645x    
+video:252191kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+ffmpeg version 4.2.2 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 9.2.1 (GCC) 20200122
+  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libdav1d --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libaom --enable-libmfx --enable-amf --enable-ffnvcodec --enable-cuvid --enable-d3d11va --enable-nvenc --enable-nvdec --enable-dxva2 --enable-avisynth --enable-libopenmpt
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'data/N3V/hacknex\cam10.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf56.40.101
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 47070 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 2704x2028 [SAR 1:1 DAR 4:3], 47066 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> png (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to 'data/N3V/hacknex/images/cam10_%04d.png':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.29.100
+    Stream #0:0(und): Video: png, rgb24, 2704x2028 [SAR 1:1 DAR 4:3], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc58.54.100 png
+frame=   18 fps=0.0 q=-0.0 size=N/A time=00:00:00.06 bitrate=N/A speed=0.0849x    frame=   34 fps= 23 q=-0.0 size=N/A time=00:00:00.60 bitrate=N/A speed=0.397x    frame=   50 fps= 22 q=-0.0 size=N/A time=00:00:01.13 bitrate=N/A speed=0.497x    frame=   60 fps= 18 q=-0.0 Lsize=N/A time=00:00:02.00 bitrate=N/A speed=0.602x    
+video:301906kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+ffmpeg version 4.2.2 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 9.2.1 (GCC) 20200122
+  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libdav1d --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libaom --enable-libmfx --enable-amf --enable-ffnvcodec --enable-cuvid --enable-d3d11va --enable-nvenc --enable-nvdec --enable-dxva2 --enable-avisynth --enable-libopenmpt
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'data/N3V/hacknex\cam13.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf56.40.101
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 43805 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 2704x2028 [SAR 1:1 DAR 4:3], 43801 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> png (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to 'data/N3V/hacknex/images/cam13_%04d.png':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.29.100
+    Stream #0:0(und): Video: png, rgb24, 2704x2028 [SAR 1:1 DAR 4:3], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc58.54.100 png
+frame=   18 fps=0.0 q=-0.0 size=N/A time=00:00:00.06 bitrate=N/A speed=0.0895x    frame=   34 fps= 24 q=-0.0 size=N/A time=00:00:00.60 bitrate=N/A speed=0.424x    frame=   50 fps= 24 q=-0.0 size=N/A time=00:00:01.13 bitrate=N/A speed=0.548x    frame=   60 fps= 20 q=-0.0 Lsize=N/A time=00:00:02.00 bitrate=N/A speed=0.664x    
+video:264478kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+ffmpeg version 4.2.2 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 9.2.1 (GCC) 20200122
+  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libdav1d --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libaom --enable-libmfx --enable-amf --enable-ffnvcodec --enable-cuvid --enable-d3d11va --enable-nvenc --enable-nvdec --enable-dxva2 --enable-avisynth --enable-libopenmpt
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'data/N3V/hacknex\cam20.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf56.40.101
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 46179 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 2704x2028 [SAR 1:1 DAR 4:3], 46175 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> png (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to 'data/N3V/hacknex/images/cam20_%04d.png':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.29.100
+    Stream #0:0(und): Video: png, rgb24, 2704x2028 [SAR 1:1 DAR 4:3], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc58.54.100 png
+frame=   18 fps=0.0 q=-0.0 size=N/A time=00:00:00.06 bitrate=N/A speed=0.0889x    frame=   34 fps= 22 q=-0.0 size=N/A time=00:00:00.60 bitrate=N/A speed=0.394x    frame=   50 fps= 23 q=-0.0 size=N/A time=00:00:01.13 bitrate=N/A speed=0.515x    frame=   60 fps= 19 q=-0.0 Lsize=N/A time=00:00:02.00 bitrate=N/A speed=0.632x    
+video:252596kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+==== running: "C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe" -y -i "data/N3V/hacknex\cam01.mp4" -start_number 0 -frames:v 60 "data/N3V/hacknex/images/cam01_%04d.png"
+==== running: "C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe" -y -i "data/N3V/hacknex\cam10.mp4" -start_number 0 -frames:v 60 "data/N3V/hacknex/images/cam10_%04d.png"
+==== running: "C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe" -y -i "data/N3V/hacknex\cam13.mp4" -start_number 0 -frames:v 60 "data/N3V/hacknex/images/cam13_%04d.png"
+==== running: "C:\Users\SANJAY V S\miniconda3\envs\4d_gaussian_splatting\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe" -y -i "data/N3V/hacknex\cam20.mp4" -start_number 0 -frames:v 60 "data/N3V/hacknex/images/cam20_%04d.png"
+[INFO] 240 images, 4 cameras ['cam01', 'cam10', 'cam13', 'cam20'], 4 poses
+[INFO] H=2028.0 W=2704.0 fl=1462.7383255729974
+[INFO] avg radius = 9.632542683828655
+[INFO] wrote transforms (180 train / 60 test frames)
+==== running: colmap feature_extractor --database_path "data/N3V/hacknex/tmp\database.db" --image_path "data/N3V/hacknex/tmp\images"
+FATAL: command failed
+===== PREPROCESS EXIT: 1 =====

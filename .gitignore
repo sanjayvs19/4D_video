@@ -1,0 +1,8 @@
+# Full upstream clone with datasets/checkpoints (~18 GB), kept local only.
+# See README.md for how to obtain it.
+/4d-gaussian-splatting/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
